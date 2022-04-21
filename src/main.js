@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import ScrollPicker from 'vue3-scroll-picker';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(ScrollPicker);
+app.mount('#app')
